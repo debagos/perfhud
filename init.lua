@@ -1,4 +1,4 @@
-local updateInterval = 1
+local updateInterval = minetest.settings:get("perfhud_update_interval") or 1
 local perfHUDs = {}
 
 local function listIsEmpty(list)

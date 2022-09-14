@@ -1,0 +1,1 @@
+perfhud_update_interval (Perfhud update interval) float 1 0.1 10
