@@ -44,7 +44,7 @@ local function createPerfHUD(playerName)
 	local player = minetest.get_player_by_name(playerName)
 	if player ~= nil then
 		return player:hud_add({
-			hud_elem_type = "text",
+			[minetest.features.hud_def_type_field and "type" or "hud_elem_type"] = "text",
 			name = "perfhud",
 			position = { x = 0.5, y = 1 },
 			alignment = { x = 0, y = -1 },
